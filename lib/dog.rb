@@ -76,8 +76,6 @@ class Dog
       DB[:conn].execute(sql, name).map do |row|
         self.new_from_db(row)
       end.first
-
-    self.new(id, name, breed)
   end
 
 
