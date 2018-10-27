@@ -77,7 +77,7 @@ class Dog
         self.new_from_db(row)
       end.first
 
-    self.new(id, name, breed)
+    self.new(name, breed)
   end
 
 
